@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<Platforms>AnyCPU;x86;x64</Platforms>
+		<AssemblyName>SubModLoader</AssemblyName>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<DebugType>embedded</DebugType>
+		<OutputType>Library</OutputType>
+		<LangVersion>11.0</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<OutputFiles Include="$(TargetDir)**\*.*" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Remove="GUI\Structs\**" />
+	  <EmbeddedResource Remove="GUI\Structs\**" />
+	  <None Remove="GUI\Structs\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\ImGui.NET\src\ImGui.NET\ImGui.NET.csproj" />
+	  <ProjectReference Include="..\SubmachineModTool\UndertaleModLib\UndertaleModLib.csproj" />
+	</ItemGroup>
+
+	<Target Name="PostBuildDebugx86" AfterTargets="PostBuildEvent" Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+		<Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(SolutionDir)Debug\SubModLoader\%(OutputFiles.RecursiveDir)" />
+		<Message Text="Copied: %(OutputFiles.FileName)%(OutputFiles.Extension) to $(SolutionDir)Debug\SubModLoader\%(OutputFiles.RecursiveDir)" Importance="high" />
+	</Target>
+
+	<Target Name="PostBuildDebugx64" AfterTargets="PostBuildEvent" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+		<Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(SolutionDir)x64\Debug\SubModLoader\%(OutputFiles.RecursiveDir)" />
+		<Message Text="Copied: %(OutputFiles.FileName)%(OutputFiles.Extension) to $(SolutionDir)x64\Debug\SubModLoader\%(OutputFiles.RecursiveDir)" Importance="high" />
+	</Target>
+
+	<Target Name="PostBuildReleasex86" AfterTargets="PostBuildEvent" Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+		<Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(SolutionDir)Debug\SubModLoader\%(OutputFiles.RecursiveDir)" />
+		<Message Text="Copied: %(OutputFiles.FileName)%(OutputFiles.Extension) to $(SolutionDir)Release\SubModLoader\%(OutputFiles.RecursiveDir)" Importance="high" />
+	</Target>
+
+	<Target Name="PostBuildReleasex64" AfterTargets="PostBuildEvent" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+		<Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(SolutionDir)x64\Debug\SubModLoader\%(OutputFiles.RecursiveDir)" />
+		<Message Text="Copied: %(OutputFiles.FileName)%(OutputFiles.Extension) to $(SolutionDir)x64\Release\SubModLoader\%(OutputFiles.RecursiveDir)" Importance="high" />
+	</Target>
+
+</Project>

@@ -1,0 +1,31 @@
+{
+  "profiles": {
+    "sliceofsea": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\sliceofsea\\sliceofsea.exe",
+      "workingDirectory": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\sliceofsea\\",
+      "nativeDebugging": true
+    },
+    "GameMaker": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\GameMaker\\GameMaker.exe",
+      "workingDirectory": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\GameMaker\\",
+      "environmentVariables": {
+        "SteamAppId": "391540"
+      },
+      "nativeDebugging": true
+    },
+    "where is 2022": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\xande\\Games\\Mateusz Skutnik\\Where is Year\\where-is-2022\\where_is_2022.exe",
+      "workingDirectory": "C:\\Users\\xande\\Games\\Mateusz Skutnik\\Where is Year\\where-is-2022",
+      "nativeDebugging": true
+    },
+    "submachine": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\submachine\\submachine.exe",
+      "workingDirectory": "C:\\Users\\xande\\Games\\steam\\steamapps\\common\\submachine\\",
+      "nativeDebugging": true
+    }
+  }
+}

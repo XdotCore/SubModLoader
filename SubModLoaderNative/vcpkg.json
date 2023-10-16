@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "dependencies": [
+    "freetype",
+    "nethost",
+    "detours"
+  ],
+  "builtin-baseline": "0789630513565c6ea73caad01f98313cdec1b073"
+}
