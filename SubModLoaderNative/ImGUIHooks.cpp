@@ -1,11 +1,11 @@
 #include <windows.h>
 #include <filesystem>
 #include "detours/detours.h"
-#include "ImGui/imgui.h"
-#include "ImGui/misc/freetype/imgui_freetype.h"
-#include "ImGui/dx11/imgui_impl_dx11.h"
-#include "ImGui/dx9/imgui_impl_dx9.h"
-#include "ImGui/win32/imgui_impl_win32.h"
+#include "../imgui/imgui.h"
+#include "../imgui/misc/freetype/imgui_freetype.h"
+#include "../imgui/backends/imgui_impl_dx11.h"
+#include "../imgui/backends/imgui_impl_dx9.h"
+#include "../imgui/backends/imgui_impl_win32.h"
 #include <d3d11.h>
 #include <d3d9.h>
 #include "DXVtables.h"

@@ -103,7 +103,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)ImGui</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)imgui\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -129,7 +129,7 @@ if %errorlevel% equ 3 exit 0</Command>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)ImGui</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)imgui\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -155,7 +155,7 @@ if %errorlevel% equ 3 exit 0</Command>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)ImGui</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)imgui\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -181,7 +181,7 @@ if %errorlevel% equ 3 exit 0</Command>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)ImGui</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)imgui\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -198,21 +198,20 @@ if %errorlevel% equ 3 exit 0</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\imgui\backends\imgui_impl_dx9.cpp" />
+    <ClCompile Include="..\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\imgui\imgui.cpp" />
+    <ClCompile Include="..\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\imgui\misc\freetype\imgui_freetype.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DXVtables.cpp" />
     <ClCompile Include="GMLToC#Interop.cpp" />
     <ClCompile Include="DataWinHook.cpp" />
     <ClCompile Include="ImGUIHooks.cpp" />
-    <ClCompile Include="ImGui\cimgui.cpp" />
-    <ClCompile Include="ImGui\dx11\imgui_impl_dx11.cpp" />
-    <ClCompile Include="ImGui\dx9\imgui_impl_dx9.cpp" />
-    <ClCompile Include="ImGui\imgui.cpp" />
-    <ClCompile Include="ImGui\imgui_demo.cpp" />
-    <ClCompile Include="ImGui\imgui_draw.cpp" />
-    <ClCompile Include="ImGui\imgui_tables.cpp" />
-    <ClCompile Include="ImGui\imgui_widgets.cpp" />
-    <ClCompile Include="ImGui\misc\freetype\imgui_freetype.cpp" />
-    <ClCompile Include="ImGui\win32\imgui_impl_win32.cpp" />
     <ClCompile Include="NetBootstrap.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -220,17 +219,6 @@ if %errorlevel% equ 3 exit 0</Command>
     <ClInclude Include="Exports.h" />
     <ClInclude Include="GMLToC#Interop.h" />
     <ClInclude Include="ImGUIHooks.h" />
-    <ClInclude Include="ImGui\cimgui.h" />
-    <ClInclude Include="ImGui\dx11\imgui_impl_dx11.h" />
-    <ClInclude Include="ImGui\dx9\imgui_impl_dx9.h" />
-    <ClInclude Include="ImGui\imconfig.h" />
-    <ClInclude Include="ImGui\imgui.h" />
-    <ClInclude Include="ImGui\imgui_internal.h" />
-    <ClInclude Include="ImGui\imstb_rectpack.h" />
-    <ClInclude Include="ImGui\imstb_textedit.h" />
-    <ClInclude Include="ImGui\imstb_truetype.h" />
-    <ClInclude Include="ImGui\misc\freetype\imgui_freetype.h" />
-    <ClInclude Include="ImGui\win32\imgui_impl_win32.h" />
     <ClInclude Include="NetBootstrap.h" />
     <ClInclude Include="DataWinHook.h" />
   </ItemGroup>

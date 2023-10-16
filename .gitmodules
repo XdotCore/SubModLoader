@@ -4,3 +4,6 @@
 [submodule "SubModLoader_ImGui.NET"]
 	path = SubModLoader_ImGui.NET
 	url = https://github.com/XdotCore/SubModLoader_ImGui.NET
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/ocornut/imgui

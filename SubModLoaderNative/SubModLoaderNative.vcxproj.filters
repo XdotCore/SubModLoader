@@ -16,29 +16,11 @@
     <Filter Include="Source Files\ImGui">
       <UniqueIdentifier>{7c8328b6-752d-435b-8678-266f447668ab}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\ImGui">
-      <UniqueIdentifier>{fd62faf5-2fd2-4d59-98b7-444dcb5536ed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ImGui\dx9">
-      <UniqueIdentifier>{43f4f627-774d-4684-8ca7-a1b4b7249b31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ImGui\dx11">
-      <UniqueIdentifier>{b220ebbd-cbb7-4418-bfe9-85569bb4f3b8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ImGui\dx11">
       <UniqueIdentifier>{47931ed5-ef1b-40a9-b1d0-1c14b4ced93b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\ImGui\win32">
-      <UniqueIdentifier>{d72f5af5-e5f5-41c5-82e3-5111808d8151}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\ImGui\win32">
       <UniqueIdentifier>{c4a0a962-0c93-4bdb-9ca9-82da883b2c43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ImGui\misc">
-      <UniqueIdentifier>{97ba1754-6670-4131-898a-f36d7c359518}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\ImGui\misc\freetype">
-      <UniqueIdentifier>{97212f55-017c-448f-9e77-030a3f67ae8d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\ImGui\misc">
       <UniqueIdentifier>{ede4124a-b2f4-4048-99bc-8d320c8fa6d6}</UniqueIdentifier>
@@ -66,38 +48,38 @@
     <ClCompile Include="ImGUIHooks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ImGui\imgui.cpp">
-      <Filter>Source Files\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\imgui_demo.cpp">
-      <Filter>Source Files\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\imgui_draw.cpp">
-      <Filter>Source Files\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\imgui_tables.cpp">
-      <Filter>Source Files\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\imgui_widgets.cpp">
-      <Filter>Source Files\ImGui</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\dx11\imgui_impl_dx11.cpp">
-      <Filter>Source Files\ImGui\dx11</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\win32\imgui_impl_win32.cpp">
-      <Filter>Source Files\ImGui\win32</Filter>
-    </ClCompile>
     <ClCompile Include="DXVtables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ImGui\misc\freetype\imgui_freetype.cpp">
-      <Filter>Source Files\ImGui\misc\freetype</Filter>
-    </ClCompile>
-    <ClCompile Include="ImGui\dx9\imgui_impl_dx9.cpp">
-      <Filter>Source Files\ImGui\dx9</Filter>
-    </ClCompile>
     <ClCompile Include="ImGui\cimgui.cpp">
       <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_demo.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_draw.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_tables.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>Source Files\ImGui\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\misc\freetype\imgui_freetype.cpp">
+      <Filter>Source Files\ImGui\misc\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_dx11.cpp">
+      <Filter>Source Files\ImGui\dx11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>Source Files\ImGui\dx9</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -116,41 +98,8 @@
     <ClInclude Include="ImGUIHooks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ImGui\imconfig.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imgui.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imgui_internal.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imstb_rectpack.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imstb_textedit.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\imstb_truetype.h">
-      <Filter>Header Files\ImGui</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\dx9\imgui_impl_dx9.h">
-      <Filter>Header Files\ImGui\dx9</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\dx11\imgui_impl_dx11.h">
-      <Filter>Header Files\ImGui\dx11</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\win32\imgui_impl_win32.h">
-      <Filter>Header Files\ImGui\win32</Filter>
-    </ClInclude>
     <ClInclude Include="DXVtables.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\misc\freetype\imgui_freetype.h">
-      <Filter>Header Files\ImGui\misc\freetype</Filter>
-    </ClInclude>
-    <ClInclude Include="ImGui\cimgui.h">
-      <Filter>Header Files\ImGui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
