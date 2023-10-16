@@ -1,0 +1,6 @@
+[submodule "SubmachineModTool"]
+	path = SubmachineModTool
+	url = https://github.com/XdotCore/SubmachineModTool
+[submodule "SubModLoader_ImGui.NET"]
+	path = SubModLoader_ImGui.NET
+	url = https://github.com/XdotCore/SubModLoader_ImGui.NET
